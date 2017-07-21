@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="football_bet" Class="CoreDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=BONZEN19\MSSQL2014;Initial Catalog=football_bet;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DefaultConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.League_Master" Member="League_Masters">
+    <Type Name="League_Master">
+      <Column Name="league_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="league_name" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Association Name="League_Master_Team_Master" Member="Team_Masters" ThisKey="league_id" OtherKey="league_id" Type="Team_Master" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Team_Master" Member="Team_Masters">
+    <Type Name="Team_Master">
+      <Column Name="team_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="league_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="team_name" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Association Name="Team_Master_Match_Detail" Member="Match_Details" ThisKey="team_id" OtherKey="team_id" Type="Match_Detail" />
+      <Association Name="League_Master_Team_Master" Member="League_Master" ThisKey="league_id" OtherKey="league_id" Type="League_Master" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Match_Detail" Member="Match_Details">
+    <Type Name="Match_Detail">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="team_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="match_program" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="location" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="goal_positive" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="goal_negative" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Team_Master_Match_Detail" Member="Team_Master" ThisKey="team_id" OtherKey="team_id" Type="Team_Master" IsForeignKey="true" />
+      <Association Name="Match_Program_Match_Detail" Member="Match_Program1" ThisKey="match_program" OtherKey="id" Type="Match_Program" IsForeignKey="true" />
+      <Association Name="Location_Match_Detail" Member="Location1" ThisKey="location" OtherKey="id" Type="Location" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Match_Program" Member="Match_Programs">
+    <Type Name="Match_Program">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="mp_name" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Association Name="Match_Program_Match_Detail" Member="Match_Details" ThisKey="id" OtherKey="match_program" Type="Match_Detail" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Location" Member="Locations">
+    <Type Name="Location">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="location" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Association Name="Location_Match_Detail" Member="Match_Details" ThisKey="id" OtherKey="location" Type="Match_Detail" />
+    </Type>
+  </Table>
+</Database>

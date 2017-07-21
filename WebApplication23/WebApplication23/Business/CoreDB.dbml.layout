@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CoreDB">
+  <DataContextMoniker Name="/CoreDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="5a34a6a8-0a9d-4c25-b8c6-3807c1999bb0" absoluteBounds="0.5, 0.5, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/CoreDBDataContext/League_Master" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1c85acd3-95c1-4630-80a2-230de412bb8d" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="01c99d79-c551-4119-a935-d8715a772005" absoluteBounds="3.125, 0.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/CoreDBDataContext/Team_Master" />
+      <nestedChildShapes>
+        <elementListCompartment Id="12553adb-e871-4d7d-8c7a-37039017cccd" absoluteBounds="3.1399999999999997, 0.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 1.09699625651042); (3.125 : 1.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CoreDBDataContext/League_Master/League_Master_Team_Master" />
+      <nodes>
+        <classShapeMoniker Id="5a34a6a8-0a9d-4c25-b8c6-3807c1999bb0" />
+        <classShapeMoniker Id="01c99d79-c551-4119-a935-d8715a772005" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="169c20e7-6d8d-40b4-835c-1fd1f26c7cc0" absoluteBounds="3.125, 2.25, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/CoreDBDataContext/Match_Detail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e9e88bc3-74c7-4355-ad94-c9c60b6b7f38" absoluteBounds="3.1399999999999997, 2.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.125 : 1.8862939453125); (4.125 : 2.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CoreDBDataContext/Team_Master/Team_Master_Match_Detail" />
+      <nodes>
+        <classShapeMoniker Id="01c99d79-c551-4119-a935-d8715a772005" />
+        <classShapeMoniker Id="169c20e7-6d8d-40b4-835c-1fd1f26c7cc0" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="2805fdf9-a62f-418f-ad0b-dc2adcd5639a" absoluteBounds="0.5, 3.375, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/CoreDBDataContext/Match_Program" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c2f8a6ba-f243-4c99-bca7-287cd84f0d34" absoluteBounds="0.51500000000000057, 3.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 3.89024983723958); (3.125 : 3.89024983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CoreDBDataContext/Match_Program/Match_Program_Match_Detail" />
+      <nodes>
+        <classShapeMoniker Id="2805fdf9-a62f-418f-ad0b-dc2adcd5639a" />
+        <classShapeMoniker Id="169c20e7-6d8d-40b4-835c-1fd1f26c7cc0" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="cb831db5-8d5c-4487-9849-014753582a81" absoluteBounds="0.5, 1.875, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/CoreDBDataContext/Location" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4844ca88-ba61-4919-a2b5-7398d75c89d5" absoluteBounds="0.51500000000000012, 2.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 2.65949625651042); (3.125 : 2.65949625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CoreDBDataContext/Location/Location_Match_Detail" />
+      <nodes>
+        <classShapeMoniker Id="cb831db5-8d5c-4487-9849-014753582a81" />
+        <classShapeMoniker Id="169c20e7-6d8d-40b4-835c-1fd1f26c7cc0" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

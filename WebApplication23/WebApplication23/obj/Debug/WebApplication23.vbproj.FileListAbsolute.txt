@@ -1,0 +1,9 @@
+C:\Users\User\documents\visual studio 2010\Projects\WebApplication23\WebApplication23\bin\WebApplication23.dll
+C:\Users\User\documents\visual studio 2010\Projects\WebApplication23\WebApplication23\bin\WebApplication23.pdb
+C:\Users\User\documents\visual studio 2010\Projects\WebApplication23\WebApplication23\bin\WebApplication23.xml
+C:\Users\User\documents\visual studio 2010\Projects\WebApplication23\WebApplication23\obj\Debug\WebApplication23.Resources.resources
+C:\Users\User\documents\visual studio 2010\Projects\WebApplication23\WebApplication23\obj\Debug\WebApplication23.vbproj.GenerateResource.Cache
+C:\Users\User\documents\visual studio 2010\Projects\WebApplication23\WebApplication23\obj\Debug\WebApplication23.dll.licenses
+C:\Users\User\documents\visual studio 2010\Projects\WebApplication23\WebApplication23\obj\Debug\WebApplication23.dll
+C:\Users\User\documents\visual studio 2010\Projects\WebApplication23\WebApplication23\obj\Debug\WebApplication23.xml
+C:\Users\User\documents\visual studio 2010\Projects\WebApplication23\WebApplication23\obj\Debug\WebApplication23.pdb
