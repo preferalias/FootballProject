@@ -174,7 +174,11 @@
 #End Region
 
 #Region "Match Detail"
-    Public Function ImportMatchDetailByXlsx (ByVal
+    Public Function ImportMatchDetailByXlsx(ByVal x As IO.Stream) As Boolean
+        Dim result As Boolean = False
+
+        Return result
+    End Function
 #End Region
 
 End Class
