@@ -6,7 +6,127 @@ WebApplication23
 </name>
 </assembly>
 <members>
-<member name="F:WebApplication23.Site.HeadContent">
+<member name="F:WebApplication23.OverviewPage.txt_leagueID">
+	<summary>
+txt_leagueID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebApplication23.OverviewPage.txt_teamID">
+	<summary>
+txt_teamID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebApplication23.OverviewPage.lbl_league">
+	<summary>
+lbl_league control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebApplication23.OverviewPage.cbb_league">
+	<summary>
+cbb_league control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebApplication23.OverviewPage.ods_cbbleague">
+	<summary>
+ods_cbbleague control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebApplication23.OverviewPage.lbl_team">
+	<summary>
+lbl_team control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebApplication23.OverviewPage.cbb_team">
+	<summary>
+cbb_team control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebApplication23.OverviewPage.ods_cbbteam">
+	<summary>
+ods_cbbteam control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebApplication23.OverviewPage.gv_matchDetail">
+	<summary>
+gv_matchDetail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebApplication23.InputDataByDate.txt_teamID">
+	<summary>
+txt_teamID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebApplication23.InputDataByDate.btn_ExportXlsTemp">
+	<summary>
+btn_ExportXlsTemp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebApplication23.InputDataByDate.lbl_temp">
+	<summary>
+lbl_temp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebApplication23.InputDataByDate.file_importPartiData">
+	<summary>
+file_importPartiData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebApplication23.InputDataByDate.btn_import">
+	<summary>
+btn_import control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebApplication23.InputDataByDate.gv_matchDetail">
+	<summary>
+gv_matchDetail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebApplication23.Site.HeadContent">
 	<summary>
 HeadContent control.
 </summary>
@@ -262,6 +382,14 @@ btn_ExportXlsTemp control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:WebApplication23.InputDataPage.lbl_temp">
+	<summary>
+lbl_temp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:WebApplication23.InputDataPage.file_importPartiData">
 	<summary>
 file_importPartiData control.
@@ -273,6 +401,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:WebApplication23.InputDataPage.btn_import">
 	<summary>
 btn_import control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebApplication23.InputDataPage.gv_matchDetail">
+	<summary>
+gv_matchDetail control.
 </summary>
 	<remarks>
 Auto-generated field.

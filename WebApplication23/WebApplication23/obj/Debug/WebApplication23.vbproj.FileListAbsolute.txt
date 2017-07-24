@@ -16,3 +16,6 @@ C:\Users\User\Desktop\FootballProject\WebApplication23\WebApplication23\obj\Debu
 C:\Users\User\Desktop\FootballProject\WebApplication23\WebApplication23\bin\WebApplication23.dll
 C:\Users\User\Desktop\FootballProject\WebApplication23\WebApplication23\bin\WebApplication23.pdb
 C:\Users\User\Desktop\FootballProject\WebApplication23\WebApplication23\bin\WebApplication23.xml
+C:\Users\User\Desktop\FootballProject\WebApplication23\WebApplication23\bin\EPPlus.dll
+C:\Users\User\Desktop\FootballProject\WebApplication23\WebApplication23\bin\EPPlus.xml
+C:\Users\User\Desktop\FootballProject\WebApplication23\WebApplication23\obj\Debug\WebApplication23.vbprojResolveAssemblyReference.cache

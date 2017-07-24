@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class InputDataPage
+Partial Public Class OverviewPage
 
     '''<summary>
     '''txt_leagueID control.
@@ -84,42 +84,6 @@ Partial Public Class InputDataPage
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ods_cbbteam As Global.System.Web.UI.WebControls.ObjectDataSource
-
-    '''<summary>
-    '''btn_ExportXlsTemp control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents btn_ExportXlsTemp As Global.DevExpress.Web.ASPxButton
-
-    '''<summary>
-    '''lbl_temp control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lbl_temp As Global.DevExpress.Web.ASPxLabel
-
-    '''<summary>
-    '''file_importPartiData control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents file_importPartiData As Global.System.Web.UI.WebControls.FileUpload
-
-    '''<summary>
-    '''btn_import control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents btn_import As Global.DevExpress.Web.ASPxButton
 
     '''<summary>
     '''gv_matchDetail control.

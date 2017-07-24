@@ -1,15 +1,13 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="InputDataPage.aspx.vb" Inherits="WebApplication23.InputDataPage" %>
-
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="OverviewPage.aspx.vb" Inherits="WebApplication23.OverviewPage" %>
 <%@ Register Assembly="DevExpress.Web.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web" TagPrefix="dx" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="headerText">
-        <h1>Input Data</h1>
+ <div class="headerText">
+        <h1>Overview Match Details</h1>
     </div>
-    <fieldset style="margin:0 0 0 0;"><legend>Upload Data By Excel</legend>
+    <fieldset style="margin:0 0 0 0;"><legend>Filter</legend>
       <div style="float:left; margin-bottom:20px;">
         
         <dx:ASPxTextBox ClientInstanceName="txt_leagueID" runat="server" ID="txt_leagueID" ClientVisible="false"></dx:ASPxTextBox>
@@ -46,33 +44,11 @@
         <asp:ObjectDataSource runat="server" ID="ods_cbbteam" TypeName="WebApplication23.DataManager" 
                     SelectMethod="GetTeamByLeague" >
         </asp:ObjectDataSource>
-    </div>
-    
-        <div style="float: right; ">
-                        <dx:ASPxButton ID="btn_ExportXlsTemp" ClientInstanceName="btn_temp" runat="server" Text="Export Excel Temp" AutoPostBack="true" Width="90px" >
-                    </dx:ASPxButton>
-                    <dx:ASPxLabel ID="lbl_temp" runat="server" Text="Download ตัวอย่างไฟล์ Excel" style="margin-right:43px;"></dx:ASPxLabel>
-                
-        </div>
-        <div style="clear: right; float:right; margin-top: 10px;">
-                     <asp:FileUpload runat="server" ID="file_importPartiData"  />
-                     <dx:ASPxButton ID="btn_import" ClientInstanceName="btn_import" runat="server" Text="Import">
-                        <ClientSideEvents Click="function(s,e){ 
-                                                                    if (txt_teamID.GetText()) {
-                                                                        if (!confirm('Are you sure to import data to '+cbb_team.GetText()+' Team')){
-                                                                            e.processOnServer = false;}
-                                                                    }
-                                                                    else{
-                                                                        alert('Choose Team');
-                                                                        e.processOnServer = false;
-                                                                    }
-                                                              }"/>
-                     </dx:ASPxButton>
         </div>
     </fieldset>
-    <fieldset style="margin:0 0 0 0;"><legend>Latest Update</legend>
-        <dx:ASPxGridView ClientInstanceName="gv_matchDetail" ID="gv_matchDetail" runat="server" SkinID="PlasticBlue"
-            KeyFieldName="id">
+    <fieldset><legend>Result</legend>
+            <dx:ASPxGridView ClientInstanceName="gv_matchDetail" ID="gv_matchDetail" runat="server" SkinID="PlasticBlue"
+                KeyFieldName="id">
             <SettingsBehavior ConfirmDelete="true" EnableRowHotTrack="true" />
             <SettingsEditing Mode="Inline" />
             <SettingsPager PageSize="15"></SettingsPager>

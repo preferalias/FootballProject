@@ -30,7 +30,11 @@
                     <Items>
                         <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
                         <asp:MenuItem NavigateUrl="~/SettingMasterTable.aspx" Text="Setting" />
-                        <asp:MenuItem NavigateUrl="~/InputDataPage.aspx" Text="Input Team Data" />
+                        <asp:MenuItem NavigateUrl="" Text="Input Data">
+                            <asp:MenuItem NavigateUrl="~/InputDataPage.aspx" Text="Input By Team" />
+                            <asp:MenuItem NavigateUrl="~/InputDataByDate.aspx" Text="Input By Date"/>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/OverviewPage.aspx" Text="Overview"/>
                         <asp:MenuItem NavigateUrl="~/About.aspx" Text="About"/>
                     </Items>
                 </asp:Menu>

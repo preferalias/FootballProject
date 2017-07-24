@@ -55,6 +55,9 @@
     <Reference Include="DevExpress.Web.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>..\..\..\EPPlus.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Linq" />
@@ -98,8 +101,10 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Img\header.jpg" />
+    <Content Include="InputDataByDate.aspx" />
     <Content Include="InputDataPage.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="OverviewPage.aspx" />
     <Content Include="SettingMasterTable.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
@@ -144,6 +149,13 @@
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="InputDataByDate.aspx.designer.vb">
+      <DependentUpon>InputDataByDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InputDataByDate.aspx.vb">
+      <DependentUpon>InputDataByDate.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="InputDataPage.aspx.designer.vb">
       <DependentUpon>InputDataPage.aspx</DependentUpon>
     </Compile>
@@ -177,6 +189,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="OverviewPage.aspx.designer.vb">
+      <DependentUpon>OverviewPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OverviewPage.aspx.vb">
+      <DependentUpon>OverviewPage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="SettingMasterTable.aspx.designer.vb">
       <DependentUpon>SettingMasterTable.aspx</DependentUpon>
     </Compile>
@@ -203,6 +222,7 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <None Include="Templates\MatchDataByTeamTemp.xlsx" />
     <None Include="Templates\MatchDataTemp.xlsx" />
   </ItemGroup>
   <ItemGroup>

@@ -11,16 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class InputDataPage
-
-    '''<summary>
-    '''txt_leagueID control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txt_leagueID As Global.DevExpress.Web.ASPxTextBox
+Partial Public Class InputDataByDate
 
     '''<summary>
     '''txt_teamID control.
@@ -30,60 +21,6 @@ Partial Public Class InputDataPage
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txt_teamID As Global.DevExpress.Web.ASPxTextBox
-
-    '''<summary>
-    '''lbl_league control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lbl_league As Global.DevExpress.Web.ASPxLabel
-
-    '''<summary>
-    '''cbb_league control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents cbb_league As Global.DevExpress.Web.ASPxComboBox
-
-    '''<summary>
-    '''ods_cbbleague control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ods_cbbleague As Global.System.Web.UI.WebControls.ObjectDataSource
-
-    '''<summary>
-    '''lbl_team control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lbl_team As Global.DevExpress.Web.ASPxLabel
-
-    '''<summary>
-    '''cbb_team control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents cbb_team As Global.DevExpress.Web.ASPxComboBox
-
-    '''<summary>
-    '''ods_cbbteam control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ods_cbbteam As Global.System.Web.UI.WebControls.ObjectDataSource
 
     '''<summary>
     '''btn_ExportXlsTemp control.
